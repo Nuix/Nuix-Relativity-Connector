@@ -1,0 +1,40 @@
+import os
+import inspect
+import sys
+
+
+pathToScripts = "C:\\Program Files\\Nuix\\Nuix RESTful Service\\user-scripts\\RelativityClient.nuixscript"
+pathToJar=pathToScripts+"\\relativity-client-1.0.jar"
+sys.path.append(pathToJar)
+
+from com.nuix.relativityclient import HeadlessRelativityClient
+from com.nuix.relativityclient.utils import ApplicationLogger
+
+class HeadlessApplicationLogger(ApplicationLogger):
+    def setStatus(self, status, currentValue, estimatedFinalValue):
+        progress.setStatus(status)
+        progress.setCurrentValue(currentValue)
+        progress.setEstimatedFinalValue(estimatedFinalValue)
+
+    def logException(self, message, exception):
+        print "ERROR: "+message
+
+    def logInfo(self, message):
+        print message
+
+    def notifyComplete(self):
+        pass
+
+try:
+    nuixCase = current_case
+except NameError:
+    nuixCase = None
+
+try:
+    nuixUtilities = utilities
+except NameError:
+    nuixUtilities = None
+
+HeadlessRelativityClient(HeadlessApplicationLogger(), nuixUtilities,nuixCase,pathToScripts,custom_arguments)
+
+

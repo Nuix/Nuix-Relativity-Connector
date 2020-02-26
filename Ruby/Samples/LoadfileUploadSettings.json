@@ -1,0 +1,32 @@
+{
+    "fieldsSettings": {
+        "FieldList": [
+            {
+                "identifier": true,
+                "loadfileColumn": "DOCID",
+                "workspaceColumn": "Control Number"
+            },
+            {
+                "loadfileColumn": "TEXTPATH",
+                "workspaceColumn": "Extracted Text"
+            },
+            {
+                "loadfileColumn": "Title",
+                "workspaceColumn": "Title"
+            },
+            {
+                "loadfileColumn": "Filename",
+                "workspaceColumn": "File Name"
+            }
+        ],
+        "metadataProfileName": "Nuix to Relativity"
+    },
+    "relativitySettings": {
+        "username": "jsmith@example.com",
+        "webServiceUrl": "https://relativity.example.com/relativitywebapi"
+    },
+    "uploadSettings": {
+        "nativeCopyMode": 1,
+        "overwriteMode": 0
+    }
+}

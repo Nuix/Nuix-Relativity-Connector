@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{619F158D-5C20-4EA3-A375-9F63CF2200F5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net, Version=0.1.5073.29922, Culture=neutral, PublicKeyToken=6bcd409ee6bc9292, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="FaspManager">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\FaspManager.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.ImageValidator">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.ImageValidator.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.OI.FileID">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.OI.FileID.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.Relativity.DataReaderClient">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.Relativity.DataReaderClient.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.Relativity.ImportAPI">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.Relativity.ImportAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.Windows.Forms">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.Windows.Process">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.Windows.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.WinEDDS">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.WinEDDS.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.WinEDDS.ImportExtension">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.WinEDDS.ImportExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="kCura.WinEDDS.Tapi">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\kCura.WinEDDS.Tapi.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly, Version=5.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Polly.5.3.1\lib\net45\Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\Relativity.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity.Logging, Version=9.4.308.17, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Logging.9.4.308\lib\net462\Relativity.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity.Logging.Interfaces, Version=9.4.308.17, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Logging.9.4.308\lib\net462\Relativity.Logging.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity.Transfer.Client">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\Relativity.Transfer.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Relativity.Transfer.Client.Core">
+      <HintPath>..\Relativity SDK\ImportAPI\Client\x64\Relativity.Transfer.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZetaLongPaths, Version=1.0.0.16, Culture=neutral, PublicKeyToken=b764f59068f31f38, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZetaLongPaths.1.0.0.16\lib\net40-full\ZetaLongPaths.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventHandler.cs" />
+    <Compile Include="Models\RelativitySettings.cs" />
+    <Compile Include="Models\UploadSettings.cs" />
+    <Compile Include="Models\FieldsSettings.cs" />
+    <Compile Include="Models\Field.cs" />
+    <Compile Include="Models\Settings.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="oi\unmanaged\cmmap000.bin" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "$(SolutionDir)Client\bin\Release\oi"
+copy /Y "$(SolutionDir)\Relativity SDK\ImportAPI\Client\x64\oi\*" "$(SolutionDir)Client\bin\Release\oi\*"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

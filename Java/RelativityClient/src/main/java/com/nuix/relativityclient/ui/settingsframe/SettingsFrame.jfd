@@ -1,0 +1,475 @@
+JFDML JFormDesigner: "6.0.3.0.150" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/NuixIcon.png" )
+			"title": "Relativity Client"
+			"defaultCloseOperation": 2
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "settingsPane"
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": true
+				}
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets dialog,hidemode 3"
+					"$columnConstraints": "[fill]unrel[grow,fill][button,fill][button,fill]"
+					"$rowConstraints": "[]para[grow][][][]"
+				} ) {
+					name: "contentPanel"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3"
+						"$columnConstraints": "0[fill][fill][grow,fill][sizegroup button,fill][sizegroup button,fill]0"
+						"$rowConstraints": "0[]0"
+					} ) {
+						name: "panelModule"
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelModuleType"
+							"text": "Import Module:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBoxModuleType"
+							auxiliary() {
+								"JavaCodeGenerator.typeParameters": "ModuleType"
+								"JavaCodeGenerator.customCreateCode": "new JComboBox<>(ModuleType.values());"
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBoxModuleTypeActionPerformed", false ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 0"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "buttonSave"
+							"text": "Save"
+							"enabled": false
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonSaveActionPerformed", false ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 3 0"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "buttonLoad"
+							"text": "Load"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonLoadActionPerformed", false ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 4 0"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0 4 1"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3"
+						"$columnConstraints": "[90,fill][20,fill]0[330,fill][grow,fill]"
+						"$rowConstraints": "[][][]para[]unrel[]unrel[grow]para[]"
+					} ) {
+						name: "panelRelativitySettings"
+						"border": new javax.swing.border.TitledBorder( "Relativity Settings" )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelRelativityWebServiceUrl"
+							"text": "Web Service URL:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldRelativityWebServiceUrl"
+							auxiliary() {
+								"JavaCodeGenerator.customCreateCode": "new PlaceholderTextField(\"https://relativity.example.com/relativitywebapi\");"
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 0 2 1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelRelativityUsername"
+							"text": "Username:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldRelativityUsername"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 1 2 1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelRelativityPassword"
+							"text": "Password:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JPasswordField" ) {
+							name: "passwordFieldRelativityPassword"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 2 2 1"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "buttonListWorkspaces"
+							"text": "List Workspaces"
+							"enabled": false
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonListWorkspacesActionPerformed", false ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3 2 1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelWorkspaces"
+							"text": "Workspaces:"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+							"$layoutConstraints": "hidemode 3"
+							"$columnConstraints": "0[225,grow,fill][225,grow,fill]0"
+							"$rowConstraints": "0[grow]0"
+						} ) {
+							name: "panelWorkspaces"
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPaneWorkspaces"
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+								add( new FormComponent( "javax.swing.JList" ) {
+									name: "listWorkspaces"
+									"visibleRowCount": 15
+									auxiliary() {
+										"JavaCodeGenerator.postCreateCode": "listWorkspaces.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);\nlistWorkspaces.setCellRenderer(new WorkspaceCellRenderer());"
+										"JavaCodeGenerator.typeParameters": "Workspace"
+										"JavaCodeGenerator.customCreateCode": "new DeselectJList<>();"
+									}
+									addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "listWorkspacesValueChanged", true ) )
+								} )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 0"
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPaneFolders"
+								add( new FormComponent( "javax.swing.JTree" ) {
+									name: "treeFolders"
+									"visibleRowCount": 15
+									auxiliary() {
+										"JavaCodeGenerator.customCreateCode": "new FolderJTree();"
+										"JavaCodeGenerator.postCreateCode": "treeFolders.setShowsRootHandles(true);\n"
+									}
+									addEvent( new FormEvent( "javax.swing.event.TreeSelectionListener", "valueChanged", "treeFoldersValueChanged", false ) )
+									addEvent( new FormEvent( "javax.swing.event.TreeWillExpandListener", "treeWillExpand", "treeFoldersTreeWillExpand", true ) )
+								} )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 1 0"
+							} )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 4 3 2"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+							"$layoutConstraints": "hidemode 3"
+							"$columnConstraints": "0[90,fill][button,fill][fill][grow,fill]0"
+							"$rowConstraints": "0[][]0"
+						} ) {
+							name: "panelFieldsSettings"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelMetadataProfile"
+								"text": "Metadata Profile:"
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 0"
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "comboBoxMetadataProfile"
+								auxiliary() {
+									"JavaCodeGenerator.typeParameters": "String"
+								}
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBoxMetadataProfileActionPerformed", false ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 1 0 2 1"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelMapping"
+								"text": "Mapping:"
+								auxiliary() {
+									"JavaCodeGenerator.variableLocal": true
+								}
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 0 1"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "buttonMapping"
+								"text": "Create"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonMappingActionPerformed", false ) )
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 1 1"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "labelMappingCount"
+							}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+								"value": "cell 2 1 2 1"
+							} )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 6 4 1"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1 4 1"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3"
+						"$columnConstraints": "[90,fill][fill]"
+						"$rowConstraints": "[][]"
+					} ) {
+						name: "panelUploadSettings"
+						"border": new javax.swing.border.TitledBorder( "Upload Settings" )
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelNativeFiles"
+							"text": "Native Files:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBoxNativeFileCopyMode"
+							auxiliary() {
+								"JavaCodeGenerator.typeParameters": "NativeFileCopyMode"
+								"JavaCodeGenerator.customCreateCode": "new JComboBox<>(NativeFileCopyMode.values());"
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBoxNativeFileCopyModeActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelOverwriteMode"
+							"text": "Overwrite Mode:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBoxOverwriteMode"
+							auxiliary() {
+								"JavaCodeGenerator.typeParameters": "OverwriteMode"
+								"JavaCodeGenerator.customCreateCode": "new JComboBox<>(OverwriteMode.values());"
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBoxOverwriteModeActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 1"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2 4 1"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3"
+						"$columnConstraints": "[90,fill][fill][grow,fill][button,fill]"
+						"$rowConstraints": "[]0[]"
+					} ) {
+						name: "panel1"
+						"border": new javax.swing.border.TitledBorder( "Module Settings" )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelLoadfileLocation"
+							"text": "Loadfile Location:"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldLoadfileLocation"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 0 2 1"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "buttonLoadfileLocation"
+							"text": "Browse"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonLoadfileLocationActionPerformed", false ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 3 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelProductionSet"
+							"text": "Production Set:"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "comboBoxProductionSet"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 1"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3 4 1"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3"
+						"$columnConstraints": "[90,fill][350,fill]30[right][10,grow 50,shrink 50,fill]"
+						"$rowConstraints": "[][][][][]"
+					} ) {
+						name: "panelSqlDatbase"
+						"border": new javax.swing.border.TitledBorder( "SQL Database" )
+						"autoscrolls": true
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelSqlServerName"
+							"text": "Server Name:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldSqlServerName"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelSqlServerPort"
+							"text": "Server Port:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 2 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "spinnerSqlServerPort"
+							"model": new javax.swing.SpinnerNumberModel( 1433, 1, 65535, 1 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 3 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelSqlInstanceName"
+							"text": "Instance Name:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldSqlInstanceName"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 1"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelSqlDomain"
+							"text": "Domain:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldSqlDomain"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelSqlUsername"
+							"text": "Username:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldSqlUsername"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 3"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "labelSqlPassword"
+							"text": "Password:"
+							auxiliary() {
+								"JavaCodeGenerator.variableLocal": true
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4"
+						} )
+						add( new FormComponent( "javax.swing.JPasswordField" ) {
+							name: "passwordFieldSqlPassword"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 4"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "buttonTestConnection"
+							"text": "Test Connection"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "buttonTestConnectionActionPerformed", true ) )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 2 4 2 1"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4 4 1"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets dialog,alignx right"
+					"$columnConstraints": "[button,fill][button,fill]"
+					"$rowSpecs": "[fill]"
+					"$rowConstraints": "[]"
+				} ) {
+					name: "buttonBar"
+					auxiliary() {
+						"JavaCodeGenerator.variableLocal": true
+					}
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "startButton"
+						"text": "Start"
+						"enabled": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startButtonActionPerformed", false ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": "Cancel"
+						auxiliary() {
+							"JavaCodeGenerator.variableLocal": true
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelButtonActionPerformed", false ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 20, 5 )
+			"size": new java.awt.Dimension( 640, 1045 )
+		} )
+	}
+}
