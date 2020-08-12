@@ -12,8 +12,6 @@ import nuix.Case;
 import nuix.MetadataProfile;
 import nuix.ProductionSet;
 import nuix.Utilities;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,6 +20,9 @@ import java.io.StringWriter;
 import java.nio.file.Path;
 import java.sql.SQLException;
 import java.util.Map;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class HeadlessRelativityClient {
 

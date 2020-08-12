@@ -6,8 +6,8 @@ import com.nuix.relativityclient.ui.relativitymapping.RelativityMappingFrame;
 import com.nuix.relativityclient.ui.settingsframe.SettingsFrame;
 import nuix.Case;
 import nuix.Utilities;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;

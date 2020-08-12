@@ -10,8 +10,8 @@ import com.nuix.relativityclient.relativitytypes.Field;
 import com.nuix.relativityclient.relativitytypes.Folder;
 import com.nuix.relativityclient.relativitytypes.Workspace;
 import nuix.*;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 import java.util.stream.Collectors;
