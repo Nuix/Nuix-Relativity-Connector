@@ -8,8 +8,8 @@ import com.nuix.relativityclient.relativitytypes.FieldColumn;
 import com.nuix.relativityclient.utils.ApplicationLogger;
 import com.nuix.relativityclient.utils.JdbcClient;
 import nuix.*;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

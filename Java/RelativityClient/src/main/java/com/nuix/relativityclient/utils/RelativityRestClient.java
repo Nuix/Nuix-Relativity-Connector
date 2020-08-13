@@ -1,8 +1,8 @@
 package com.nuix.relativityclient.utils;
 
 import com.nuix.relativityclient.relativitytypes.*;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.ws.rs.NotAuthorizedException;
 import javax.ws.rs.client.Client;

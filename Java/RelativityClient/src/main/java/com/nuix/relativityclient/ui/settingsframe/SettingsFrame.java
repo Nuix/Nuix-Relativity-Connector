@@ -32,8 +32,8 @@ import nuix.Case;
 import nuix.MetadataProfile;
 import nuix.ProductionSet;
 import nuix.Utilities;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import umich.ms.batmass.gui.core.api.util.glasspane.DisabledPanel;
 
 import javax.swing.*;

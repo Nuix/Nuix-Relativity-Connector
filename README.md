@@ -1,8 +1,6 @@
 Nuix Relativity Connector
 ===============================
 
-![This script was last tested in Nuix 8.0](https://img.shields.io/badge/Script%20Tested%20in%20Nuix-8.0-green.svg)
-
 View the GitHub project [here](https://github.com/Nuix/Nuix-Relativity-Connector).
 
 # Overview
@@ -32,9 +30,9 @@ The following modules can be used for the Direct SQL and File Share Upload scena
 #### Java User Interface
 - Download and install the [Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 - Download and install [Apache Maven](https://maven.apache.org/download.cgi)
-- The Maven `pom.xml` file for the Java User Interface references Nuix Workstation 8.0.3.121. If using a different version of Nuix Workstation when building the Java User Interface, modify the file `Java\RelativityClientUserInterface\pom.xml` and update the property `scripting-version` to reflect the version of Nuix Workstation installed.
-- In the `Java\RelativityClientUserInterface` folder from this repository, build the Java User Interface by running the command `mvn package`.
-- Copy the resulting file `Java\RelativityClientUserInterface\target\relativity-client-1.0.jar` to `JavaScript\RelativityClient.nuixscript`
+- The Maven `pom.xml` file for the Java User Interface references Nuix Workstation 8.6.2.414. If using a different version of Nuix Workstation when building the Java User Interface, modify the file `Java\RelativityClient\pom.xml` and update the property `scripting-version` to reflect the version of Nuix Workstation installed.
+- In the `Java\RelativityClient` folder from this repository, build the Java User Interface by running the command `mvn package`.
+- Copy the resulting file `Java\RelativityClient\target\relativity-client-1.0.jar` to `JavaScript\RelativityClient.nuixscript`
 - Copy the folder `JavaScript\RelativityClient.nuixscript` to the Nuix Scripts folder
 
 ### Running the User Interface
@@ -136,9 +134,9 @@ Both modules call the **C# Relativity Loadfile Upload Client** which is built us
 - Copy contents of `C#\Clients` to `JavaScript\RelativityClient.nuixscript\RelativityLoadfileUpload\Clients`
 - Download and install the [Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 - Download and install [Apache Maven](https://maven.apache.org/download.cgi)
-- The Maven `pom.xml` file for the Java User Interface references Nuix Workstation 8.0.3.121. If using a different version of Nuix Workstation when building the Java User Interface, modify the file `Java\RelativityClientUserInterface\pom.xml` and update the property `scripting-version` to reflect the version of Nuix Workstation installed.
-- In the `Java\RelativityClientUserInterface` folder from this repository, build the Java User Interface by running the command `mvn package`.
-- Copy the resulting file `Java\RelativityClientUserInterface\target\relativity-client-1.0.jar` to `JavaScript\RelativityClient.nuixscript`
+- The Maven `pom.xml` file for the Java User Interface references Nuix Workstation 8.6.2.414. If using a different version of Nuix Workstation when building the Java User Interface, modify the file `Java\RelativityClient\pom.xml` and update the property `scripting-version` to reflect the version of Nuix Workstation installed.
+- In the `Java\RelativityClient` folder from this repository, build the Java User Interface by running the command `mvn package`.
+- Copy the resulting file `Java\RelativityClient\target\relativity-client-1.0.jar` to `JavaScript\RelativityClient.nuixscript`
 - Copy the folder `JavaScript\RelativityClient.nuixscript` to the Nuix Scripts folder
 
 ### Running the User Interface
@@ -215,7 +213,7 @@ See below sample scriptRequest body:
 # License
 
 ```
-Copyright 2019 Nuix
+Copyright 2020 Nuix
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
