@@ -42,7 +42,7 @@
       <HintPath>..\packages\BCrypt-Official.0.1.109\lib\BCrypt.Net.dll</HintPath>
     </Reference>
     <Reference Include="FaspManager, Version=3.7.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Transfer.Client.5.0.7\lib\net462\FaspManager.dll</HintPath>
+      <HintPath>..\packages\Relativity.Transfer.Client.7.3.0\lib\net462\FaspManager.dll</HintPath>
     </Reference>
     <Reference Include="FreeImageNET, Version=3.18.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Import.Client.10.2.270.1\lib\net462\FreeImageNET.dll</HintPath>
@@ -102,6 +102,9 @@
     <Reference Include="Relativity.DataTransfer.MessageService, Version=1.0.21.3, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Import.Client.10.2.270.1\lib\net462\Relativity.DataTransfer.MessageService.dll</HintPath>
     </Reference>
+    <Reference Include="Relativity.DataTransfer.Nodes, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Transfer.Client.7.3.0\lib\net462\Relativity.DataTransfer.Nodes.dll</HintPath>
+    </Reference>
     <Reference Include="Relativity.Kepler, Version=1.0.1.557, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.ObjectManager.10.2.270.1\lib\net462\Relativity.Kepler.dll</HintPath>
     </Reference>
@@ -147,39 +150,39 @@
     <Reference Include="Relativity.Telemetry.MetricsCollection.Interface, Version=9.4.164.2, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Relativity.Telemetry.Client.9.4.164\lib\net462\Relativity.Telemetry.MetricsCollection.Interface.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Transfer.Client, Version=5.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Transfer.Client.5.0.7\lib\net462\Relativity.Transfer.Client.dll</HintPath>
+    <Reference Include="Relativity.Transfer.Client, Version=7.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Transfer.Client.7.3.0\lib\net462\Relativity.Transfer.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Transfer.Client.Aspera, Version=5.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Transfer.Client.5.0.7\lib\net462\Relativity.Transfer.Client.Aspera.dll</HintPath>
+    <Reference Include="Relativity.Transfer.Client.Aspera, Version=7.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Transfer.Client.7.3.0\lib\net462\Relativity.Transfer.Client.Aspera.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Transfer.Client.AzureBlob, Version=5.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Transfer.Client.5.0.7\lib\net462\Relativity.Transfer.Client.AzureBlob.dll</HintPath>
+    <Reference Include="Relativity.Transfer.Client.Core, Version=7.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Transfer.Client.7.3.0\lib\net462\Relativity.Transfer.Client.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Transfer.Client.AzureFiles, Version=5.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Transfer.Client.5.0.7\lib\net462\Relativity.Transfer.Client.AzureFiles.dll</HintPath>
+    <Reference Include="Relativity.Transfer.Client.FileShare, Version=7.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Transfer.Client.7.3.0\lib\net462\Relativity.Transfer.Client.FileShare.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Transfer.Client.Core, Version=5.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Transfer.Client.5.0.7\lib\net462\Relativity.Transfer.Client.Core.dll</HintPath>
+    <Reference Include="Relativity.Transfer.Client.Http, Version=7.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Relativity.Transfer.Client.7.3.0\lib\net462\Relativity.Transfer.Client.Http.dll</HintPath>
     </Reference>
-    <Reference Include="Relativity.Transfer.Client.FileShare, Version=5.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Transfer.Client.5.0.7\lib\net462\Relativity.Transfer.Client.FileShare.dll</HintPath>
-    </Reference>
-    <Reference Include="Relativity.Transfer.Client.Http, Version=5.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Relativity.Transfer.Client.5.0.7\lib\net462\Relativity.Transfer.Client.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="Renci.SshNet, Version=2016.0.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
-      <HintPath>..\packages\SSH.NET.2016.0.0\lib\net40\Renci.SshNet.dll</HintPath>
+    <Reference Include="Renci.SshNet, Version=2020.0.2.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2020.0.2\lib\net40\Renci.SshNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reactive.4.0.0\lib\net46\System.Reactive.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
     <Reference Include="ZetaLongPaths, Version=1.0.0.16, Culture=neutral, PublicKeyToken=b764f59068f31f38, processorArchitecture=MSIL">
       <HintPath>..\packages\ZetaLongPaths.1.0.0.16\lib\net40-full\ZetaLongPaths.dll</HintPath>
     </Reference>
